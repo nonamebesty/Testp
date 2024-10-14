@@ -38,9 +38,9 @@ async def batch(client: Client, message: Message):
         
     string = f"get-{f_msg_id * abs(client.db_channel.id)}-{s_msg_id * abs(client.db_channel.id)}"
     base64_string = await encode(string)
-    link = f"https://t.me/{client.username}?start={base64_string}"
+    link = f"https://tamilserialbot1.jasurun.workers.dev?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
-    await second_message.reply_text(f"<b>🧑‍💻 Here is your code : \n<code>{base64_string}</code></b>\n\n<b>🔗 Here is your link :</b>\n{link}", quote=True, reply_markup=reply_markup)
+    await second_message.reply_text(f"<b>code : \n<code>{base64_string}</code></b>\n\n{link}", quote=True, reply_markup=reply_markup)
 
 
 
@@ -60,6 +60,6 @@ async def link_generator(client: Client, message: Message):
             await channel_message.reply("❌ Error\n\nthis Forwarded Post is not from my DB Channel or this Link is not taken from DB Channel", quote = True)
             continue
     base64_string = await encode(f"get-{msg_id * abs(client.db_channel.id)}")
-    link = f"https://t.me/{client.username}?start={base64_string}"
+    link = f"https://tamilserialbot1.jasurun.workers.dev?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
-    await channel_message.reply_text(f"<b>🧑‍💻 Here is your code : \n<code>{base64_string}</code></b>\n\n<b>🔗 Here is your link : </b>\n{link}", quote=True, reply_markup=reply_markup)
+    await channel_message.reply_text(f"<b>{file_name} ~ <code>{base64_string}</code> - {file_size}\n\n{link}</b>", quote=True, reply_markup=reply_markup)
