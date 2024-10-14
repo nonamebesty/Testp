@@ -49,7 +49,7 @@ async def channel_post(client: Client, message: Message):
 
 
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
-    await reply_text.edit(f"<b>{file_name} {file_size}\n<code>{base64_string}</code>\n\n{link}</b>", reply_markup=reply_markup, disable_web_page_preview = True)
+    await reply_text.edit(f"<b>{file_name} ~ <code>{base64_string}</code> - {file_size}\n\n{link}</b>", reply_markup=reply_markup, disable_web_page_preview = True)
     
     if not DISABLE_CHANNEL_BUTTON:
         try:
