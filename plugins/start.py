@@ -117,9 +117,6 @@ async def start_command(client: Client, message: Message):
                         await snt_msg.delete()  
                     except: 
                         pass
-                string = f"get-{f_msg_id * abs(client.db_channel.id)}-{s_msg_id * abs(client.db_channel.id)}"
-                base64_string = await encode(string)
-                link = f"https://tamilserialbot.jasurun.workers.dev?start={base64_string}"
                 await notification_msg.edit("<b>Your file has been successfully deleted! 😼/ Use this cmd /ch2l then send this code <code>{base64_string}</code>. You will get ur file back</b>")  
                 return
             if (U_S_E_P):
