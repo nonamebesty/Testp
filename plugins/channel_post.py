@@ -50,6 +50,7 @@ async def channel_post(client: Client, message: Message):
     base64_string = await encode(string)
     link = f"https://tamilserialbot.jasurun.workers.dev?start={base64_string}"
     #Asuran
+    media = message.document or message.video or message.audio or message.photo
     if media:
         file_name = media.file_name if media.file_name else ""
         file_size = humanbytes(media.file_size) if media.file_size else "N/A"
