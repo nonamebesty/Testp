@@ -21,7 +21,7 @@ if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
 #bot stats
 BOT_STATS_TEXT = os.environ.get("BOTS_STATS_TEXT","<b>BOT UPTIME 🌺</b>\n{uptime}")
 #send custom message when user interact with bot
-USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "Don't send me messages directly I'm only File Share bot! 📌")
+USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "")
 
 #your bot token here from https://telegram.me/BotFather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "") 
