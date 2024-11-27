@@ -40,7 +40,7 @@ async def batch(client: Client, message: Message):
     base64_string = await encode(string)
     link = f"https://tamilserialbot.jasurun.workers.dev?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
-    await second_message.reply_text(f"🔗 ➟ {link}", quote=True, reply_markup=reply_markup)
+    await second_message.reply_text(f"<b>ᴀʟʟ ɪɴ 1</b> ➟ {link}", quote=True, reply_markup=reply_markup)
 
 
 
@@ -62,4 +62,4 @@ async def link_generator(client: Client, message: Message):
     base64_string = await encode(f"get-{msg_id * abs(client.db_channel.id)}")
     link = f"https://tamilserialbot.jasurun.workers.dev?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
-    await channel_message.reply_text(f"<b>-----------***------------\n{file_name} - [⏲️ {duration}] - 📁 {file_size}\n\n{link}\n-----------***------------</b>", quote=True, reply_markup=reply_markup)
+    await channel_message.reply_text(f"<b>{file_name} ~ [⏰ {duration}] - 📁 {file_size}\n\nLink: {link}</b>", quote=True, reply_markup=reply_markup)
