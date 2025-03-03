@@ -36,7 +36,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1904146512"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://video:video@rishi.fzpls33.mongodb.net/?retryWrites=true&w=majority")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://filestorebot:filestorebot@filestorebot.vocsels.mongodb.net/?retryWrites=true&w=majority&appName=Filestorebot")
 #your database name
 DB_NAME = os.environ.get("DB_NAME", "T3shaM")
 
