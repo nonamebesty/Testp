@@ -114,7 +114,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 #add admins with space seperated
 # 7195990000 289371935 248979023
-ADMIN_LIST = os.environ.get("ADMINS", "5821871362 1904146512").split()
+ADMIN_LIST = os.environ.get("ADMINS", "1904146512 1904146512").split()
 
 
 
