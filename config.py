@@ -45,7 +45,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
 #your start default command message.
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link. 💾")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "JAsuran2p0")
+OWNER_TAG = os.environ.get("OWNER_TAG", "T3shaM")
 #Time in seconds for message delete, put 0 to never delete
 TIME = int(os.environ.get("TIME", "600"))
 
@@ -63,7 +63,7 @@ USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else F
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "modijiurl.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "e5a0df550303e31db72c8924e40e706976a2adb2")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "82c086e71c57aac66c3ccd23037375190258e13e")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
