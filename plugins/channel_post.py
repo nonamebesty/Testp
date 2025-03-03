@@ -48,7 +48,7 @@ async def channel_post(client: Client, message: Message):
     converted_id = post_message.id * abs(client.db_channel.id)
     string = f"get-{converted_id}"
     base64_string = await encode(string)
-    link = f"https://tamilserialbot.jasurun.workers.dev?start={base64_string}"
+    link = f"https://thammutvofficialbot.skvillageboys.workers.dev?start={base64_string}"
     #Asuran
     media = message.document or message.video or message.audio or message.photo
     if media:
