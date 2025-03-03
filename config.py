@@ -30,15 +30,15 @@ APP_ID = int(os.environ.get("APP_ID", "23562101"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "6615417976218d5e44eb2b077a0a0ed0")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002461730224"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002407217730"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "880087645"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1904146512"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://video:video@rishi.fzpls33.mongodb.net/?retryWrites=true&w=majority")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "asuranj")
+DB_NAME = os.environ.get("DB_NAME", "T3shaM")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
