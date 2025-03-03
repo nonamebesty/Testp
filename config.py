@@ -29,7 +29,7 @@ TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7312104810:AAEWIGuVLkQNh2fmdPO5bV
 APP_ID = int(os.environ.get("APP_ID", "23562101"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "6615417976218d5e44eb2b077a0a0ed0")
-#your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
+#your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that messages
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002407217730"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
 OWNER_ID = int(os.environ.get("OWNER_ID", "1904146512"))
